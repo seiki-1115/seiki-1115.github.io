@@ -11,12 +11,78 @@
     <script src="resource/bootstrap-3.4.1-dist/js/jquery-3.6.4.min.js"></script>
     <script src="resource/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
     <style type="text/css">
-        /* .container {
-            background: orange;
-        } */
-        /* div[class|=col] {
-            border: 1px solid;
-        } */
+        .my-thumbnail {
+            border-style: none;
+        }
+
+        .my-caption>h3 {
+            font-size: 14px;
+            color: #222;
+            font-weight: 400;
+            line-height: 18px;
+        }
+
+        .my-caption>p {
+            font-size: 12px;
+            color: #999;
+            font-weight: 400;
+            line-height: 17px;
+        }
+
+        .my-deshboard {
+            padding-top: 4%;
+            padding-left: 1%;
+            padding-right: 0%;
+        }
+
+        .my-info-link {
+            font-weight: 300;
+            font-size: 17px;
+        }
+
+        .my-info-link>a {
+            color: #999;
+        }
+
+        .my-portfilo-link {
+            font-weight: 700;
+            font-size: 14px;
+        }
+
+        .my-portfilo-link>a {
+            color: #222;
+        }
+
+        .my-result {
+            padding-top: 5%;
+        }
+
+        .main-icon {
+            padding-left: 15px;
+            padding-right: 45%;
+            padding-bottom: 15%;
+        }
+
+        .my-navbar-toggle {
+            border: 0px solid transparent;
+        }
+
+        .my-social-media-link {
+            padding-top: 43px;
+        }
+
+        .my-social-media-link>a {
+            display: inline;
+        }
+
+        .btn-group {
+            padding-left: 15px;
+        }
+
+        .my-btn-default {
+            color: #333;
+            background-color: #fff;
+        }
     </style>
     <title>Document</title>
 </head>
@@ -28,67 +94,148 @@
         md >992 桌面
         lg >1200 
     -->
-    <div class="container">
+    <nav class="navbar navbar-default visible-sm visible-xs">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed my-navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <img src="resource/img/main-icon.gif" height="30px" alt="Brand">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li role="presentation" class="my-info-link"><a href="#">關於 / About</a></li>
+                    <li role="presentation" class="my-info-link"><a href="#">聯絡 / Contact</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">作品集 / PORTFOLIO</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">品牌工程 / BRAND ENGINEERING</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">包裝設計 / PACKAGE DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">商業攝影 / PHOTOGRAPHY</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">網頁設計 / WEBSITE DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">展場設計 / EXHIBITION DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">藝術 / ART</a></li>
+                    <li role="presentation" class="my-social-media-link">
+                        <div class="btn-group">
+                            <button type="button" class="btn my-btn-default" aria-label="Left Align"><span
+                                    class="glyphicon glyphicon-align-left" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Center Align"><span
+                                    class="glyphicon glyphicon-align-center" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Right Align"><span
+                                    class="glyphicon glyphicon-align-right" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Justify"><span
+                                    class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+                        </div>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+
+    <div class="container-fluid ">
         <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/1.jpg" alt="美麗的圖片">
+            <div class="col-md-3 my-deshboard visible-md visible-lg">
+                <div class="main-icon">
+                    <a href="#">
+                        <img src="resource/img/main-icon.gif" class="img-responsive" alt="Responsive image">
+                    </a>
                 </div>
-                <div class="caption">
-                    <h3>TOEARTH初沃｜恰如其分的生活，環境的尊崇及永續的追求</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
-                </div>
+                <ul class="nav nav-pills nav-stacked">
+                    <li role="presentation" class="my-info-link"><a href="#">關於 / About</a></li>
+                    <li role="presentation" class="my-info-link"><a href="#">聯絡 / Contact</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">作品集 / PORTFOLIO</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">品牌工程 / BRAND ENGINEERING</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">包裝設計 / PACKAGE DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">商業攝影 / PHOTOGRAPHY</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">網頁設計 / WEBSITE DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">展場設計 / EXHIBITION DESIGN</a></li>
+                    <li role="presentation" class="my-portfilo-link"><a href="#">藝術 / ART</a></li>
+                    <li role="presentation" class="my-social-media-link">
+                        <div class="btn-group">
+                            <button type="button" class="btn my-btn-default" aria-label="Left Align"><span
+                                    class="glyphicon glyphicon-align-left" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Center Align"><span
+                                    class="glyphicon glyphicon-align-center" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Right Align"><span
+                                    class="glyphicon glyphicon-align-right" aria-hidden="true"></span></button>
+                            <button type="button" class="btn my-btn-default" aria-label="Justify"><span
+                                    class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+                        </div>
+
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/2.jpg" alt="美麗的圖片">
+            <div class="col-md-9 my-result">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/1.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>TOEARTH初沃｜恰如其分的生活，環境的尊崇及永續的追求</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/2.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>PUSHGOGO｜印加果樹</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/3.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>Cuckoo</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="caption">
-                    <h3>PUSHGOGO｜印加果樹</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/3.jpg" alt="美麗的圖片">
-                </div>
-                <div class="caption">
-                    <h3>Cuckoo</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/4.jpg" alt="美麗的圖片">
-                </div>
-                <div class="caption">
-                    <h3>Angelina</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/5.jpg" alt="美麗的圖片">
-                </div>
-                <div class="caption">
-                    <h3>Léontine</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="thumbnail" style="border-style: none;">
-                    <img src="/resource/img/6.jpg" alt="美麗的圖片">
-                </div>
-                <div class="caption">
-                    <h3>Elena</h3>
-                    <p style="color:#A9A9A9">Illustration, Art Design</p>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/4.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>TOEARTH初沃｜恰如其分的生活，環境的尊崇及永續的追求</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/5.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>PUSHGOGO｜印加果樹</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="thumbnail my-thumbnail">
+                            <img src="/resource/img/6.jpg" alt="美麗的圖片">
+                        </div>
+                        <div class="caption my-caption">
+                            <h3>Elena</h3>
+                            <p>Illustration, Art Design</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </body>
 
 </html>
