@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" type="text/css" href="resource/bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <script src="resource/bootstrap-3.4.1-dist/js/jquery-3.6.4.min.js"></script>
+    <script src="resource/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
+    <style type="text/css">
+        .container-fluid {
+            background: pink;
+        }
+
+        .container {
+            background: orange;
+        }
+
+        div[class|=col] {
+            border: 1px solid;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+        xs      手機
+        sm >768 平板
+        md >992 桌面
+        lg >1200 
+    -->
+    <div class="container-fluid">
+        container-fluid
+        <div class="row">
+            <div class="col-md-10">10</div>
+            <div class="col-md-2">2</div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        container
+        <div class="row">
+            <div class="col-md-6">6</div>
+            <div class="col-md-6">6</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
