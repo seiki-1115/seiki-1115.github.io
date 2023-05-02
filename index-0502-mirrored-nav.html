@@ -31,14 +31,12 @@
         }
 
         .my-deshboard {
-            padding-top: 4%;
             padding-left: 4%;
-            padding-right: 0%;
         }
 
         .my-info-link {
             font-weight: 300;
-            font-size: 17px;
+            font-size: 14px;
         }
 
         .my-info-link>a {
@@ -47,7 +45,7 @@
 
         .my-portfilo-link {
             font-weight: 700;
-            font-size: 14px;
+            font-size: 11px;
         }
 
         .my-portfilo-link>a {
@@ -59,9 +57,11 @@
         }
 
         .main-icon {
+            max-width: 200px;
             padding-left: 15px;
-            padding-right: 45%;
-            padding-bottom: 15%;
+            padding-top: 60px;
+            /* padding-right: 45%; */
+            padding-bottom: 50px;
         }
 
         .my-navbar-toggle {
@@ -95,6 +95,7 @@
             bottom: 0;
         }
         .my-navbar-brand {
+
             float: none;
             display: block;
             height: auto;
@@ -107,6 +108,54 @@
         .my-navbar {
             margin-bottom: 0px;
             border: 0px;
+        }
+        .my-mobile-nav {
+            background-color: #ffffff;
+            z-index: 1;
+            position: fixed;
+            right: 0;
+            top: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .my-mobile-nav > ul {
+            position: absolute;
+            top: 15%;
+            right: 0;
+            left: 0;
+            bottom: 0;
+        }
+        .my-mobile-nav > ul > li {
+            padding-bottom: 30px;
+        }
+        .my-mobile-nav > ul > li > a {
+            padding: 0;
+            font-size: 22px;
+            line-height: 32px;
+            text-align: center;
+        }
+        .my-mobile-nav > ul > .btn-group{
+            position: absolute;
+            text-align: center;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            padding: 5%;
+        }
+        .my-mobile-nav > ul > .btn-group > .my-btn-default{
+            float: none;
+            padding-top: 28px;
+            padding-bottom: 10px;
+
+        } 
+        .my-mobile-nav-cancel {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 30px;
+            right: 5%;
+            font-size: 20px;
+            font-weight: 700;
         }
     </style>
     <title>Document</title>
@@ -162,10 +211,34 @@
                     </li>
                 </ul>
             </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
+        </div><!-- /.container-fluid -->  
     </nav>
-
-
+    <div class="my-mobile-nav">
+        <div class="my-mobile-nav-cancel">X</div>
+        <ul class="nav nav-pills nav-stacked">       
+            <li role="presentation" class="my-info-link"><a href="#">關於 / About</a></li>
+            <li role="presentation" class="my-info-link"><a href="#">聯絡 / Contact</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">作品集 / PORTFOLIO</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">品牌工程 / BRAND ENGINEERING</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">包裝設計 / PACKAGE DESIGN</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">商業攝影 / PHOTOGRAPHY</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">網頁設計 / WEBSITE DESIGN</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">展場設計 / EXHIBITION DESIGN</a></li>
+            <li role="presentation" class="my-portfilo-link"><a href="#">藝術 / ART</a></li>
+            <div class="btn-group">
+                <button type="button" class="btn my-btn-default" ><span
+                        class="glyphicon glyphicon-align-left" aria-hidden="true"></span></button>
+                <button type="button" class="btn my-btn-default"><span
+                        class="glyphicon glyphicon-align-center" aria-hidden="true"></span></button>
+                <button type="button" class="btn my-btn-default" ><span
+                        class="glyphicon glyphicon-align-right" aria-hidden="true"></span></button>
+                <button type="button" class="btn my-btn-default" ><span
+                        class="glyphicon glyphicon-align-justify" aria-hidden="true"></span></button>
+            </div>
+        </ul>
+    
+    </div>
+    
     <div class="container-fluid ">
         <div class="row">
             <div class="col-md-3 my-deshboard visible-md visible-lg">
